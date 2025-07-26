@@ -1,28 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdf5e6;
-  color: #222;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #ffd700;
-  text-align: center;
-  padding: 20px;
-}
-
-main {
-  padding: 20px;
-}
-
-section {
-  margin-bottom: 30px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+  font-family: 'Poppins', sans-serif;
 }
