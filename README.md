@@ -1,2 +1,22 @@
-# GMT-Website
-Gold Mining Token (GMT) is a blockchain initiative on Solana, aiming to launch a real-world gold mining company in the future. This repository hosts the official website source code, token details, and project roadmap. Designed with transparency, speed, and long-term vision in mind.
+# Gold Mining Token (GMT)
+
+**GMT** is a Solana-based blockchain project aiming to launch a real-world gold mining company.  
+This repository hosts the website, token details, and roadmap.
+
+## 🌟 Vision
+To bridge blockchain transparency with tangible gold production.
+
+## 📜 Tokenomics
+- Total Supply: 300,000,000 GMT
+- Distribution:
+  - ⛏️ Mining: 83.5%
+  - 💡 Development: 5%
+  - 📣 Marketing: 5%
+  - 🧑‍💼 Team: 6.5%
+
+## 📍 Website Sections
+- Home
+- About
+- Features
+- Tokenomics
+- Contact
