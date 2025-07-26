@@ -2,47 +2,88 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gold Mining Token (GMT)</title>
-  <!-- خط Cairo من Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
   <style>
     body {
-      font-family: 'Cairo', sans-serif;
+      font-family: 'Orbitron', sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #f0c040;
+    }
+    header {
+      background: url('assets/gold-bg.jpg') center/cover no-repeat;
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+    .tokenomics, .roadmap {
+      padding: 40px 20px;
+      background-color: #1c1c1c;
+      border-top: 2px solid #f0c040;
+    }
+    .section-title {
+      font-size: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .tokenomics ul {
+      list-style: none;
+      padding: 0;
+      line-height: 1.8;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f0c040;
+      color: black;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #0d0d0d;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="GMT Logo" />
-    <h1>Welcome to GMT</h1>
+    <img src="assets/logo.png" alt="GMT Logo" width="120" />
+    <h1>Gold Mining Token</h1>
+    <p>Blockchain-powered gold venture on Solana 🚀</p>
+    <a href="#" class="button">Buy GMT</a>
   </header>
 
-  <section class="hero" style="background-image: url('assets/gold-bg.jpg');">
-    <h2>Mining Real Value</h2>
-    <p>Tokenized on the Solana blockchain</p>
+  <section class="tokenomics">
+    <h2 class="section-title">📊 Tokenomics</h2>
+    <ul>
+      <li><strong>Total Supply:</strong> 300,000,000 GMT</li>
+      <li><strong>Mining:</strong> 83.5%</li>
+      <li><strong>Development:</strong> 5%</li>
+      <li><strong>Marketing:</strong> 5%</li>
+      <li><strong>Team:</strong> 6.5%</li>
+    </ul>
   </section>
 
-  <main>
-    <section id="features">
-      <h3>Features</h3>
-      <ul>
-        <li>⚡ Fast transactions</li>
-        <li>🔐 Secure architecture</li>
-        <li>📈 Transparent tokenomics</li>
-      </ul>
-    </section>
-
-    <section id="tokenomics">
-      <h3>Tokenomics</h3>
-      <p>Total Supply: 300,000,000 GMT</p>
-      <img src="assets/token-chart.png" alt="Tokenomics Chart" />
-    </section>
-  </main>
+  <section class="roadmap">
+    <h2 class="section-title">🛠️ Roadmap</h2>
+    <ul>
+      <li>✅ Website launch</li>
+      <li>✅ Token creation on Solana</li>
+      <li>⏳ Community build-up</li>
+      <li>🔜 Real-world integration & partnerships</li>
+    </ul>
+  </section>
 
   <footer>
-    <p>&copy; 2025 Gold Mining Token. All rights reserved.</p>
+    © 2025 GMT Project — All rights reserved.
   </footer>
 </body>
 </html>
