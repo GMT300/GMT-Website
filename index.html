@@ -1,129 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gold Mining Token (GMT)</title>
-  <link rel="stylesheet" href="assets/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
   <style>
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #000;
-      color: #f0c040;
+      padding: 0;
+      line-height: 1.6;
     }
-    header {
-      text-align: center;
-      padding: 80px 20px;
-      background: url('assets/gold-bg.jpg') center/cover no-repeat;
-      color: white;
-    }
-    header img {
-      width: 100px;
-      margin-bottom: 10px;
-    }
-    .btn {
-      background: #f0c040;
-      color: black;
-      padding: 12px 24px;
-      border-radius: 6px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-      border-bottom: 2px solid #f0c040;
-    }
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-      border-bottom: 2px solid #f0c040;
-      padding-bottom: 5px;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    .telegram {
-      text-align: center;
-      padding: 30px 0;
-    }
-    .telegram a {
-      color: #f0c040;
-      font-weight: bold;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
+
+    header, section {
       padding: 20px;
-      background: #000;
-      color: #888;
-      border-top: 2px solid #f0c040;
+      text-align: center;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .section {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
+
+    .vision-desc {
+      background-color: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      font-style: italic;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="assets/logo.png" alt="GMT Logo" />
     <h1>Gold Mining Token (GMT)</h1>
     <p>A blockchain-backed gold mining venture powered by the Solana network</p>
-    <a href="#" class="btn">Buy GMT Now</a>
+    <a href="#">Buy GMT Now ⭐</a>
   </header>
 
-  <section id="vision">
+  <section>
     <h2>🌟 Vision</h2>
     <p>GMT aims to merge blockchain transparency with real-world gold production. The project fuses technology and mineral resources to build a new golden economy.</p>
+    <div class="vision-desc">
+      Gold Mining Token (GMT) is a community-driven meme token on the Solana blockchain, inspired by the dream of launching a real gold mining company. With a total supply of 300 million GMT, it blends humor with a bold long-term vision for digital and physical value.
+    </div>
   </section>
 
-  <section id="tokenomics">
-    <h2>📊 Tokenomics</h2>
-    <ul>
-      <li><strong>Total Supply:</strong> 300,000,000 GMT</li>
-      <li><strong>⛏️ Mining:</strong> 83.5%</li>
-      <li><strong>💡 Development:</strong> 5%</li>
-      <li><strong>📢 Marketing:</strong> 5%</li>
-      <li><strong>👤 Team:</strong> 6.5%</li>
-    </ul>
-  </section>
-
-  <section id="features">
-    <h2>🚀 Features</h2>
-    <ul>
-      <li>⚡ Ultra-fast transactions via Solana</li>
-      <li>🔒 Transparency through open-source smart contracts</li>
-      <li>🌍 Scalable and open to real-world mining partnerships</li>
-    </ul>
-  </section>
-
-  <section id="roadmap">
-    <h2>📍 Roadmap</h2>
-    <ul>
-      <li>✅ Website launch</li>
-      <li>✅ Token creation via CoinTool</li>
-      <li>📢 Community building on Telegram and X</li>
-      <li>🔜 Partnerships with real mining companies</li>
-    </ul>
-  </section>
-
-  <div class="telegram">
-    <p>💬 Join the official Telegram community:</p>
-    <a href="https://t.me/GMT_TOK" target="_blank">https://t.me/GMT_TOK</a>
-  </div>
-
-  <footer>
-    &copy; 2025 GMT Blockchain Project. All rights reserved.
-  </footer>
-
+  <!-- باقي الأقسام: Tokenomics, Features, Roadmap, Contact... -->
+  
 </body>
 </html>
