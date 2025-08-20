@@ -17,7 +17,7 @@ header {
 }
 
 .header-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6); /* زيادة التباين */
   padding: 30px;
   color: #FFD700;
   width: 100%;
@@ -44,6 +44,20 @@ header {
 .cta-button:hover {
   background-color: #fff;
   color: #000;
+}
+
+#price-bar {
+  background-color: #111;
+  color: #FFD700;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #FFD700;
+  margin-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 section {
@@ -78,17 +92,8 @@ a {
   width: 80%;
   border-radius: 1px;
 }
-#price-bar {
-  background-color: #111;
-  color: #FFD700;
-  padding: 10px;
-  text-align: center;
-  font-size: 16px;
-  letter-spacing: 1px;
-  border-bottom: 2px solid gold;
-}
 
-/* تصميم متجاوب للجوال */
+/* Responsive Design */
 @media (max-width: 768px) {
   .center-logo {
     max-width: 80px;
@@ -114,5 +119,9 @@ a {
   ul {
     font-size: 0.95em;
   }
-}
 
+  #price-bar {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
