@@ -1,108 +1,66 @@
 body {
-  background-color: #000;
-  color: #FFD700;
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
-  background: url('assets/goldmine.jpg') center/cover no-repeat;
-  height: auto;
+  background-color: #222;
+  color: #fff;
   padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
-.header-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 30px;
-  color: #FFD700;
-  width: 100%;
-}
-
-.center-logo {
+header img {
   max-width: 100px;
-  margin-bottom: 15px;
 }
 
-.cta-button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 24px;
-  background-color: #FFD700;
-  color: #000;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: 0.3s ease;
-  font-size: 1em;
-}
-
-.cta-button:hover {
-  background-color: #fff;
-  color: #000;
+main {
+  padding: 20px;
 }
 
 section {
-  padding: 20px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #b8860b;
 }
 
 ul {
   list-style: none;
-  padding-left: 0;
-  font-size: 1em;
+  padding: 0;
 }
 
-li {
-  padding: 5px 0;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #111;
-  font-size: 0.9em;
+ul li::before {
+  content: "✔️ ";
+  margin-right: 5px;
 }
 
 a {
-  color: #FFD700;
+  color: #b8860b;
+  text-decoration: none;
 }
 
-.divider {
-  height: 2px;
-  background-color: #FFD700;
-  margin: 30px auto;
-  width: 80%;
-  border-radius: 1px;
+a:hover {
+  text-decoration: underline;
 }
 
-/* تصميم متجاوب للجوال */
-@media (max-width: 768px) {
-  .center-logo {
-    max-width: 80px;
-  }
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
 
-  h1 {
-    font-size: 1.5em;
-  }
-
-  p {
-    font-size: 1em;
-  }
-
-  .cta-button {
-    font-size: 1em;
-    padding: 12px 24px;
-  }
-
-  section {
-    padding: 15px;
-  }
-
-  ul {
-    font-size: 0.95em;
-  }
+/* ✅ تنسيق شريط الأسعار */
+#price-bar {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid gold;
 }
