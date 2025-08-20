@@ -16,6 +16,12 @@
     </div>
   </header>
 
+  <!-- ✅ شريط الأسعار المباشر -->
+  <div id="price-bar">
+    <span id="gmt-price">🔄 Loading GMT price...</span> | 
+    <span id="gold-price">🔄 Loading gold price...</span>
+  </div>
+
   <main>
     <section>
       <h2>🔎 About GMT</h2>
@@ -57,6 +63,28 @@
   <footer>
     <p>&copy; 2025 GMT. All rights reserved.</p>
   </footer>
+
+  <!-- ✅ كود جلب الأسعار -->
+  <script>
+    async function fetchPrices() {
+      try {
+        const gmtRes = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=gold-mining-token&vs_currencies=usd');
+        const gmtData = await gmtRes.json();
+        const gmtPrice = gmtData['gold-mining-token']?.usd ?? 'Unavailable';
+
+        const goldRes = await fetch('https://api.metals.live/v1/spot');
+        const goldData = await goldRes.json();
+        const goldPrice = goldData.find(m => m.gold)?.gold ?? 'Unavailable';
+
+        document.getElementById('gmt-price').textContent = `💰 GMT: $${gmtPrice}`;
+        document.getElementById('gold-price').textContent = `🏆 Gold: $${goldPrice} / oz`;
+      } catch (error) {
+        console.error('Error fetching prices:', error);
+      }
+    }
+
+    fetchPrices();
+    setInterval(fetchPrices, 60000);
+  </script>
 </body>
 </html>
-
