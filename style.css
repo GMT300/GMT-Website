@@ -78,6 +78,15 @@ a {
   width: 80%;
   border-radius: 1px;
 }
+#price-bar {
+  background-color: #111;
+  color: #FFD700;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-bottom: 2px solid gold;
+}
 
 /* تصميم متجاوب للجوال */
 @media (max-width: 768px) {
@@ -106,3 +115,4 @@ a {
     font-size: 0.95em;
   }
 }
+
