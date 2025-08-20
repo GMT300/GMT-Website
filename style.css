@@ -9,7 +9,6 @@ body {
 header {
   background: url('assets/goldmine.jpg') center/cover no-repeat;
   height: 400px;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,14 +76,10 @@ a {
   border-radius: 1px;
 }
 
-/* تحسين العرض على الجوال */
+/* تصميم متجاوب للجوال */
 @media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
   header {
-    height: 280px;
+    height: auto;
     flex-direction: column;
     padding: 20px;
   }
