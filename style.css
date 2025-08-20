@@ -46,19 +46,6 @@ header {
   color: #000;
 }
 
-#price-bar {
-  background-color: #111;
-  color: #FFD700;
-  padding: 8px 12px;
-  margin-top: 15px;
-  text-align: center;
-  font-size: 14px;
-  border: 1px solid #FFD700;
-  border-radius: 5px;
-  display: inline-block;
-  width: fit-content;
-}
-
 section {
   padding: 20px;
 }
@@ -90,6 +77,25 @@ a {
   margin: 30px auto;
   width: 80%;
   border-radius: 1px;
+}
+
+.button-and-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#price-bar {
+  background-color: #111;
+  color: #FFD700;
+  padding: 8px 12px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  border: 1px solid #FFD700;
+  border-radius: 5px;
+  width: fit-content;
 }
 
 /* Responsive Design */
@@ -124,3 +130,4 @@ a {
     padding: 6px 10px;
   }
 }
+
