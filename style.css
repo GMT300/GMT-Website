@@ -8,7 +8,8 @@ body {
 
 header {
   background: url('assets/goldmine.jpg') center/cover no-repeat;
-  height: 400px;
+  height: auto;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,26 +18,27 @@ header {
 
 .header-overlay {
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 40px;
+  padding: 30px;
   color: #FFD700;
   width: 100%;
 }
 
 .center-logo {
-  max-width: 120px;
+  max-width: 100px;
   margin-bottom: 15px;
 }
 
 .cta-button {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #FFD700;
   color: #000;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: 0.3s ease;
+  font-size: 1em;
 }
 
 .cta-button:hover {
@@ -45,12 +47,13 @@ header {
 }
 
 section {
-  padding: 30px;
+  padding: 20px;
 }
 
 ul {
   list-style: none;
   padding-left: 0;
+  font-size: 1em;
 }
 
 li {
@@ -78,14 +81,8 @@ a {
 
 /* تصميم متجاوب للجوال */
 @media (max-width: 768px) {
-  header {
-    height: auto;
-    flex-direction: column;
-    padding: 20px;
-  }
-
   .center-logo {
-    max-width: 90px;
+    max-width: 80px;
   }
 
   h1 {
@@ -97,12 +94,12 @@ a {
   }
 
   .cta-button {
-    font-size: 0.9em;
-    padding: 8px 16px;
+    font-size: 1em;
+    padding: 12px 24px;
   }
 
   section {
-    padding: 20px;
+    padding: 15px;
   }
 
   ul {
