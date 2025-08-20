@@ -14,13 +14,11 @@
       <p>A blockchain-backed gold mining venture powered by the Solana network</p>
       <a href="https://raydium.io/swap/?input=sol&output=GMTgw6uCmdbbFwxHv3LsaPzmiM3hSMrtFRAJuJoMUzZb" target="_blank" class="cta-button">Buy GMT Now</a>
     </div>
+    <div id="price-bar">
+      <span id="gmt-price">🔄 Loading GMT price...</span> |
+      <span id="gold-price">🔄 Loading gold price...</span>
+    </div>
   </header>
-
-  <!-- ✅ شريط الأسعار المباشر -->
-  <div id="price-bar">
-    <span id="gmt-price">🔄 Loading GMT price...</span> | 
-    <span id="gold-price">🔄 Loading gold price...</span>
-  </div>
 
   <main>
     <section>
@@ -64,7 +62,6 @@
     <p>&copy; 2025 GMT. All rights reserved.</p>
   </footer>
 
-  <!-- ✅ كود جلب الأسعار -->
   <script>
     async function fetchPrices() {
       try {
@@ -72,9 +69,9 @@
         const gmtData = await gmtRes.json();
         const gmtPrice = gmtData['gold-mining-token']?.usd ?? 'Unavailable';
 
-        const goldRes = await fetch('https://api.metals.live/v1/spot');
+        const goldRes = await fetch('https://api.coingecko.com/api/v3/simple/price?ids=gold&vs_currencies=usd');
         const goldData = await goldRes.json();
-        const goldPrice = goldData.find(m => m.gold)?.gold ?? 'Unavailable';
+        const goldPrice = goldData.gold?.usd ?? 'Unavailable';
 
         document.getElementById('gmt-price').textContent = `💰 GMT: $${gmtPrice}`;
         document.getElementById('gold-price').textContent = `🏆 Gold: $${goldPrice} / oz`;
